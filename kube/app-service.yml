@@ -3,8 +3,7 @@ kind: Service
 metadata:
   name: rails
   labels:
-    name: app
-    tier: application
+    name: app-service
 spec:
   selector:
     app: app

@@ -1,15 +1,15 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: db-deployment
+  name: postgres
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: db
+        name: postgres
     spec:
       containers:
-      - name: db
+      - name: postgres
         image: postgres
         imagePullPolicy: IfNotPresent
